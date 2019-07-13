@@ -1,0 +1,263 @@
+	/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+.navbar-brand img {width:90px;}
+.navbar-brand {
+    padding: 0px;
+	margin-left:0px !important;
+    font-size: 18px;
+    line-height: 20px;
+}
+@media (min-width: 768px) {
+  .left-sidebar {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 0px;
+    width: 45px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background: #545454;
+    color: #c5c2c2;
+    border-right: 1px solid #eee;
+  }
+  .sidebar {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 44px;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background: #5e5e5e;
+    color: #c5c2c2;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: 0px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+  border-radius: 0px 5px 5px 0px;
+}
+.nav-sidebar > li > a {
+  color: #c5c2c2;
+  padding: 7px 20px;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 20px;
+    padding-left: 20px;
+    background: #e6e8e7;
+    width: 80.333333%;
+  }
+}
+@media (min-width: 992px){
+.col-md-offset-2 {
+    margin-left: 19.666667%;
+}
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #ffffff;
+}
+.toggleLi{    padding-top: 10px;}
+.ticketbdg{    padding: 15px 10px;
+  border-radius: 4px;
+  background: #dedbdb;
+  line-height: 0;
+  color: #000;
+  margin-top: 10px;}
+  .liaNoPadd{padding-top:0px !important; padding-bottom:0px !important;}
+  .userLiA{padding: 10px 15px;
+    line-height: 30px;
+    font-size: 20px;
+    background: #366e2f;
+    margin-left: 10px;}
+    .nitify{    margin-top: -6px;
+      float: right;
+      padding: 2px 5px;
+      font-size: 10px;
+      background: #e60303;
+      margin-left: -5px;
+      z-index: 9999999;}
+      .nav-sidebar > li > a {
+        color: #c5c2c2;
+    }
+    .width100{width:100%;}
+    table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
+      background-color: #e6e8e7;
+  }
+  .dataTables_wrapper .dataTables_length {
+    float: right;
+}
+.nopadding{padding:0px !important;}
+.panel-body {
+  padding: 0px;
+  padding-top: 10px
+}
+.statusLabel{  
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;}
+  .open{  background: #0066cb;}
+  h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.left-padd{    padding-left: 15px !important;}
+.colGray{    color: #afb1b0;}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color:transparent;
+}
+
+.status-container {
+  background-color: #fbfbfb;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0px 0px 7px 7px;
+}
+.panel{border-radius: 7px;}
+.flex-container>div:first-child{
+  border-left: 0px;
+    border-radius: 0px 0px 0px 5px;
+}
+.flex-container>div:last-child{
+  border-right: 0px;
+    border-radius: 0px 0px 5px 0px;
+}
+.col7{width:5%; margin:0px; display:inline-block; float:left; text-align: center; border: 1px solid #e7e9e8;
+  border-bottom: 0px;     padding: 19px 0px;}
+.col10{width:10%; margin:0px; display:inline-block; float:left;border: 1px solid #e7e9e8;
+  border-bottom: 0px;     padding: 10px 0px;}
+.col11{width:13%; margin:0px; display:inline-block; float:left;border: 1px solid #e7e9e8;
+  border-bottom: 0px;     padding: 10px 0px;}
+  .usericon{    width: 35px;
+    height: 35px;
+    background: #9895ec;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    line-height: 2.5;
+    text-align: center;
+    display: inline-block;
+    margin-top: 2px;
+    float: left;
+    margin-left: 4px;}
+    .userInfo{    width: 90px;
+      display: inline;
+      float: left;
+      padding-left: 7px;}
+    .userInfo label{margin-bottom: 0px;}  
+    .col7>i{font-size: 20px;}
+    .orange{color: #ff9900;}
+    .new{background: #ff9900; color: #fff;}
+    .sloved{background:#97cc02; color: #fff;;}
+    .green{color:#15cd99;}
+    .yellow{color:#efe44a;}
+    .red{color:#cf3b2d;}
+    table.dataTable tbody tr {
+      background-color: transparent !important;
+  }
+  table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
+    background-color: transparent !important;
+}
+.sideUl{    margin-left: -40px;
+  list-style: none;    margin-top: 20px;
+}
+.sideUl li .usericon{margin-bottom: 20px;}
+.sideUl li{    position: relative;
+  overflow: hidden;}
+  .liveStatus{width: 12px;
+    height: 12px;
+    background: #b1b1b1;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 17px;
+    right: 5px;}
+    .serchinput{    width: 345px !important;}
+    .font24{font-size: 24px;}
+    .mrgright{    margin-right: 10px;}
+    .mrgleft{    margin-left: 10px;}
